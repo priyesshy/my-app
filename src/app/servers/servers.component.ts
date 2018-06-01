@@ -22,7 +22,7 @@ export class ServersComponent implements OnInit {
   }
 
   onClick(){
-    this.onUserClick='server created';
+    this.onUserClick='server created name is ' + this.serverName ;
   }
 
   onUpdateServerName(event:Event){
