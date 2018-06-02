@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { ServersComponent } from './servers/servers.component';
   ],
   imports: [
     FormsModule,
+    CommonModule,
     BrowserModule
   ],
   providers: [],
