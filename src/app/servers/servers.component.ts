@@ -12,6 +12,7 @@ export class ServersComponent implements OnInit {
    onUserClick = 'server not created';
    serverName = '';
    serverCreated = false;
+   servers = ['server 1', 'server 2'];
   constructor() {
 
     setTimeout( () => {
@@ -24,6 +25,7 @@ export class ServersComponent implements OnInit {
 
   onClick(){
     this.serverCreated= true;
+    this.servers.push(this.serverName);
     this.onUserClick='server created name is ' + this.serverName ;
   }
 

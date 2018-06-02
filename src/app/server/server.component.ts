@@ -2,7 +2,11 @@ import { Component } from '@angular/core'; //import decorator
 
 @Component({
     selector: 'app-server',
-    templateUrl: './server.component.html'
+    templateUrl: './server.component.html',
+    styles: [`
+    .online {
+        color: white;}
+        `]
 })   //decorator
 export class ServerComponent {
     serverId=10;
