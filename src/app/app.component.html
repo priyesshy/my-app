@@ -1,16 +1,10 @@
 <div class="container">
-    <div class="row">
-     <div class="col-xs-12">
-  
-
+  <app-cockpit></app-cockpit>
   <hr>
-  <h1>server component</h1>
-  <hr>
-<h1> psdashing</h1>
-<h2>champ</h2>
-<hr>
-<app-servers></app-servers>
-
-</div>
-</div>
+  <div class="row">
+    <div class="col-xs-12">
+      <app-server-element *ngFor="let serverElement of serverElements"
+      [element]= "serverElement"></app-server-element>
+    </div>
+  </div>
 </div>
